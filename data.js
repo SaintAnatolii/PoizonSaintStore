@@ -629,10 +629,10 @@ const PRODUCTS = [
         "price": 29115,
         "material": "Искусственная кожа",
         "images": [
-            "../goods/guess_bag_logo/1.webp",
-            "../goods/guess_bag_logo/2.webp",
-            "../goods/guess_bag_logo/3.webp",
-            "../goods/guess_bag_logo/4.webp",
+            "./goods/guess_bag_logo/1.webp",
+            "./goods/guess_bag_logo/2.webp",
+            "./goods/guess_bag_logo/3.webp",
+            "./goods/guess_bag_logo/4.webp",
         ],
     },
     {
@@ -643,8 +643,8 @@ const PRODUCTS = [
         "price": 23873,
         "material": "Искусственная кожа",
         "images": [
-            "../goods/guess_white_bag/1.webp",
-            "../goods/guess_white_bag/2.webp",
+            "./goods/guess_white_bag/1.webp",
+            "./goods/guess_white_bag/2.webp",
         ],
     },
     {
@@ -655,8 +655,8 @@ const PRODUCTS = [
         "price": 23873,
         "material": "Синтетика",
         "images": [
-            "../goods/guess_black_bag/1.webp",
-            "../goods/guess_black_bag/2.webp",
+            "./goods/guess_black_bag/1.webp",
+            "./goods/guess_black_bag/2.webp",
         ],
     },
     {
@@ -667,11 +667,11 @@ const PRODUCTS = [
         "price": 4960,
         "material": "Полиэстер",
         "images": [
-            "../goods/jordan_sport_bag/1.webp",
-            "../goods/jordan_sport_bag/2.webp",
-            "../goods/jordan_sport_bag/3.webp",
-            "../goods/jordan_sport_bag/4.webp",
-            "../goods/jordan_sport_bag/5.webp",
+            "./goods/jordan_sport_bag/1.webp",
+            "./goods/jordan_sport_bag/2.webp",
+            "./goods/jordan_sport_bag/3.webp",
+            "./goods/jordan_sport_bag/4.webp",
+            "./goods/jordan_sport_bag/5.webp",
         ],
     },
     {
@@ -682,7 +682,7 @@ const PRODUCTS = [
         "price": 32997,
         "material": "Натуральная кожа",
         "images": [
-            "../goods/supreme_ss24_leather_belt/1.webp",
+            "./goods/supreme_ss24_leather_belt/1.webp",
         ],
     },
     {
@@ -693,10 +693,10 @@ const PRODUCTS = [
         "price": 17734,
         "material": "Металл, стекло",
         "images": [
-            "../goods/ray_ban_black/1.webp",
-            "../goods/ray_ban_black/2.webp",
-            "../goods/ray_ban_black/3.webp",
-            "../goods/ray_ban_black/4.webp",
+            "./goods/ray_ban_black/1.webp",
+            "./goods/ray_ban_black/2.webp",
+            "./goods/ray_ban_black/3.webp",
+            "./goods/ray_ban_black/4.webp",
         ],
     },
     {
@@ -707,9 +707,9 @@ const PRODUCTS = [
         "price": 21550,
         "material": "Металл, стекло",
         "images": [
-            "../goods/ray_ban_high_end_love_color/1.webp",
-            "../goods/ray_ban_high_end_love_color/2.webp",
-            "../goods/ray_ban_high_end_love_color/3.webp",
+            "./goods/ray_ban_high_end_love_color/1.webp",
+            "./goods/ray_ban_high_end_love_color/2.webp",
+            "./goods/ray_ban_high_end_love_color/3.webp",
         ],
     },
     {
@@ -720,9 +720,9 @@ const PRODUCTS = [
         "price": 35087,
         "material": "Металл, стекло",
         "images": [
-            "../goods/prada/1.webp",
-            "../goods/prada/2.webp",
-            "../goods/prada/3.webp",
+            "./goods/prada/1.webp",
+            "./goods/prada/2.webp",
+            "./goods/prada/3.webp",
         ],
     },
 
