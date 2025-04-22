@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINT STORE - Премиум обувь и аксессуары с POIZON</title>
+    <link rel="icon" type="image/png" href="image/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/imageapple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SaintStore" />
+    <link rel="manifest" href="image/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" data-category="all"><span style="color:#ffff">SAINT</span>Store</a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#products" class="nav-link active" data-category="all">Главная</a></li>
+                    <li><a href="#products" class="nav-link" data-category="shoes">Обувь</a></li>
+                    <li><a href="#products" class="nav-link" data-category="bags">Сумки</a></li>
+                    <li><a href="#products" class="nav-link" data-category="belts">Ремни</a></li>
+                    <li><a href="#products" class="nav-link" data-category="glasses">Аксессуары</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="cart-link" id="cartButton">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3H4.5L6.5 17H17.5L21.5 7H8" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="10" cy="20" r="1" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="18" cy="20" r="1" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero баннер -->
+    <section class="hero-banner">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Добавляем левое изображение -->
+            <div class="hero-logo-left">
+                <img src="logo1-Photoroom.png" alt="POIZON Character">
+                <div class="logo-glow"></div>
+            </div>
+
+            <!-- Анимированный логотип -->
+            <div class="hero-title">
+                <div class="animated-logo-container">
+                    <div class="animated-logo-glow"></div>
+                    <div class="animated-logo-diamond"></div>
+                    <div class="animated-logo-text">POIZON</div>
+                </div>
+            </div>
+
+            <!-- Добавляем новое изображение с фиолетовой подсветкой -->
+            <div class="hero-logo-purple">
+                <img src="logo3-Photoroom.png" alt="POIZON Purple Character">
+                <div class="purple-glow"></div>
+            </div>
+
+            <p class="hero-subtitle">Премиум обувь и аксессуары</p>
+            <a href="#products" class="hero-button">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title" id="products">Категории</h2>
+
+            <!-- Поиск и фильтрация -->
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Поиск по названию, бренду, типу...">
+                </div>
+
+                <button class="filter-button" id="filterButton">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21M6 12H18M10 18H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="filter-dropdown" id="filterDropdown">
+                    <button class="filter-option active" data-filter="all">Все товары</button>
+                    <button class="filter-option" data-filter="shoes">Обувь</button>
+                    <button class="filter-option" data-filter="bags">Сумки</button>
+                    <button class="filter-option" data-filter="belts">Ремни</button>
+                    <button class="filter-option" data-filter="glasses">Очки</button>
+                </div>
+            </div>
+
+            <!-- Сетка товаров -->
+            <div class="product-grid" id="productGrid">
+                <!-- Товары будут добавлены через JavaScript -->
+            </div>
+
+            <!-- Сообщение, если товары не найдены -->
+            <div id="noProductsMessage" class="no-products-message" style="display: none;">
+                <p>Товары не найдены. Попробуйте изменить параметры поиска.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно для индивидуального заказа -->
+    <div class="modal" id="customOrderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Индивидуальный заказ с POIZON</h3>
+                <button class="modal-close" id="modalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Мы можем привезти любой товар с платформы POIZON по вашему желанию!</p>
+                <p>Просто отправьте нам ссылку на товар или его описание, и мы организуем доставку в кратчайшие сроки.
+                </p>
+                <ul class="benefits-list">
+                    <li>Доступ к эксклюзивным товарам</li>
+                    <li>Гарантия подлинности</li>
+                    <li>Быстрая доставка</li>
+                    <li>Полное сопровождение заказа</li>
+                </ul>
+                <div class="price-note">
+                    <p><strong>Примечание:</strong> Окончательная цена на товар будет зависеть от размера и будет
+                        озвучена в момент заказа товара.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <form class="custom-order-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <textarea placeholder="Опишите товар, который вы хотите заказать" rows="3" required></textarea>
+                    <button type="submit" class="submit-button">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal-content">
+            <div class="modal-header">
+                <h3>Корзина</h3>
+                <button class="modal-close" id="cartModalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems" class="cart-items">
+                    <!-- Товары в корзине будут добавлены через JavaScript -->
+                </div>
+                <div id="emptyCartMessage" class="empty-cart-message">
+                    <p>Ваша корзина пуста</p>
+                    <a href="#products" class="hero-button cart-continue-shopping">Перейти к покупкам</a>
+                </div>
+                <div id="cartSummary" class="cart-summary">
+                    <div class="cart-total">
+                        <span>Итого:</span>
+                        <span id="cartTotalPrice">0 ₽</span>
+                    </div>
+                    <div class="price-disclaimer">
+                        * Окончательная цена на товар будет зависеть от размера и будет озвучена в момент заказа товара
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <form class="checkout-form" id="checkoutForm">
+                    <h4>Оформление заказа</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="customerName">Имя</label>
+                            <input type="text" id="customerName" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPhone">Телефон</label>
+                            <input type="tel" id="customerPhone" placeholder="Ваш телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email</label>
+                        <input type="email" id="customerEmail" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerAddress">Адрес доставки</label>
+                        <textarea id="customerAddress" placeholder="Укажите адрес доставки" rows="2"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerComment">Комментарий к заказу</label>
+                        <textarea id="customerComment" placeholder="Дополнительная информация" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button checkout-button">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Уведомление об успешном заказе -->
+    <div class="notification" id="notification">
+        <svg class="notification-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M22 11.0857V12.0057C21.9988 14.1621 21.3005 16.2604 20.0093 17.9875C18.7182 19.7147 16.9033 20.9782 14.8354 21.5896C12.7674 22.201 10.5573 22.1276 8.53447 21.3803C6.51168 20.633 4.78465 19.2518 3.61096 17.4428C2.43727 15.6338 1.87979 13.4938 2.02168 11.342C2.16356 9.19029 2.99721 7.14205 4.39828 5.5028C5.79935 3.86354 7.69279 2.72111 9.79619 2.24587C11.8996 1.77063 14.1003 1.98806 16.07 2.86572"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <h3 class="notification-title" id="notificationTitle">Заказ оформлен</h3>
+        <p class="notification-message" id="notificationMessage">Ваш заказ успешно оформлен! Мы свяжемся с вами для
+            подтверждения.</p>
+        <button class="notification-close" id="notificationClose">Закрыть</button>
+    </div>
+
+    <!-- Подключаем данные товаров -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>]
+
+</body>
+
+</html>
