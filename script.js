@@ -221,9 +221,15 @@ function closeModal() {
 }
 
 // Функция для отображения деталей товара в основном контенте
+
+let lastScrollPosition = 0
+
 function showProductDetails(productId) {
   const product = PRODUCTS.find((p) => p.id === productId)
   if (!product) return
+
+  // Сохраняем текущую позицию прокрутки
+  lastScrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
 
   // Скрываем сетку товаров
   const productGrid = document.getElementById("productGrid")
@@ -271,6 +277,10 @@ function showProductDetails(productId) {
     mainContent.appendChild(productDetailsContainer)
   }
 
+  // Прокручиваем страницу к началу блока подробностей без плавного скролла
+  const detailsTop = productDetailsContainer.getBoundingClientRect().top + window.pageYOffset
+  window.scrollTo(0, detailsTop - 100)
+
   // Добавляем обработчик для кнопки "Назад к товарам"
   document.getElementById("backToProducts").addEventListener("click", hideProductDetails)
 
@@ -303,6 +313,9 @@ function hideProductDetails() {
 
   const productGrid = document.getElementById("productGrid")
   productGrid.style.display = "grid"
+
+  // Восстанавливаем позицию прокрутки при возврате к сетке товаров
+  window.scrollTo(0, lastScrollPosition)
 }
 
 // Функция для показа уведомления
