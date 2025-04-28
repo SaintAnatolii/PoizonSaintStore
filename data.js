@@ -22,12 +22,12 @@ const PRODUCTS = [
         "price": 12094,
         "material": "Кожа, нейлон",
         "images": [
-            "./jordan_air_jordan_1_high_og_black_toe_reimagined/1.webp",
-            "./jordan_air_jordan_1_high_og_black_toe_reimagined/2.webp",
-            "./jordan_air_jordan_1_high_og_black_toe_reimagined/3.webp",
-            "./jordan_air_jordan_1_high_og_black_toe_reimagined/4.webp",
-            "./jordan_air_jordan_1_high_og_black_toe_reimagined/5.webp",
-            "./jordan_air_jordan_1_high_og_black_toe_reimagined/6.webp",
+            "./goods/jordan_air_jordan_1_high_og_black_toe_reimagined/1.webp",
+            "./goods/jordan_air_jordan_1_high_og_black_toe_reimagined/2.webp",
+            "./goods/jordan_air_jordan_1_high_og_black_toe_reimagined/3.webp",
+            "./goods/jordan_air_jordan_1_high_og_black_toe_reimagined/4.webp",
+            "./goods/jordan_air_jordan_1_high_og_black_toe_reimagined/5.webp",
+            "./goods/jordan_air_jordan_1_high_og_black_toe_reimagined/6.webp",
         ]
     },
     {
@@ -38,12 +38,12 @@ const PRODUCTS = [
         "price": 8112,
         "material": "Синтетическая кожа",
         "images": [
-            "./nike_air_force_1_07/1.webp",
-            "./nike_air_force_1_07/2.webp",
-            "./nike_air_force_1_07/3.webp",
-            "./nike_air_force_1_07/4.webp",
-            "./nike_air_force_1_07/5.webp",
-            "./nike_air_force_1_07/6.webp"
+            "./goods/nike_air_force_1_07/1.webp",
+            "./goods/nike_air_force_1_07/2.webp",
+            "./goods/nike_air_force_1_07/3.webp",
+            "./goods/nike_air_force_1_07/4.webp",
+            "./goods/nike_air_force_1_07/5.webp",
+            "./goods/nike_air_force_1_07/6.webp"
         ]
     },
     {
@@ -54,12 +54,12 @@ const PRODUCTS = [
         "price": 8295,
         "material": "Синтетическая кожа",
         "images": [
-            "./nike_air_force_1_black_and_white_low/1.webp",
-            "./nike_air_force_1_black_and_white_low/2.webp",
-            "./nike_air_force_1_black_and_white_low/3.webp",
-            "./nike_air_force_1_black_and_white_low/4.webp",
-            "./nike_air_force_1_black_and_white_low/5.webp",
-            "./nike_air_force_1_black_and_white_low/6.webp"
+            "./goods/nike_air_force_1_black_and_white_low/1.webp",
+            "./goods/nike_air_force_1_black_and_white_low/2.webp",
+            "./goods/nike_air_force_1_black_and_white_low/3.webp",
+            "./goods/nike_air_force_1_black_and_white_low/4.webp",
+            "./goods/nike_air_force_1_black_and_white_low/5.webp",
+            "./goods/nike_air_force_1_black_and_white_low/6.webp"
         ]
     },
     {
@@ -70,11 +70,11 @@ const PRODUCTS = [
         "price": 6287,
         "material": "Синтетика",
         "images": [
-            "./nike_air_max_correlate/1.webp",
-            "./nike_air_max_correlate/2.webp",
-            "./nike_air_max_correlate/3.webp",
-            "./nike_air_max_correlate/4.webp",
-            "./nike_air_max_correlate/5.webp"
+            "./goods/nike_air_max_correlate/1.webp",
+            "./goods/nike_air_max_correlate/2.webp",
+            "./goods/nike_air_max_correlate/3.webp",
+            "./goods/nike_air_max_correlate/4.webp",
+            "./goods/nike_air_max_correlate/5.webp"
         ]
     },
     {
@@ -85,10 +85,10 @@ const PRODUCTS = [
         "price": 4429,
         "material": "Синтетическая кожа",
         "images": [
-            "./nike_air_monarch_4_white_black-varsity-red/1.webp",
-            "./nike_air_monarch_4_white_black-varsity-red/2.webp",
-            "./nike_air_monarch_4_white_black-varsity-red/3.webp",
-            "./nike_air_monarch_4_white_black-varsity-red/4.webp",
+            "./goods/nike_air_monarch_4_white_black-varsity-red/1.webp",
+            "./goods/nike_air_monarch_4_white_black-varsity-red/2.webp",
+            "./goods/nike_air_monarch_4_white_black-varsity-red/3.webp",
+            "./goods/nike_air_monarch_4_white_black-varsity-red/4.webp",
         ]
     },
     {
@@ -99,11 +99,11 @@ const PRODUCTS = [
         "price": 6287,
         "material": "Замша",
         "images": [
-            "./nike_dunk_retro_prm/1.webp",
-            "./nike_dunk_retro_prm/2.webp",
-            "./nike_dunk_retro_prm/3.webp",
-            "./nike_dunk_retro_prm/4.webp",
-            "./nike_dunk_retro_prm/5.webp"
+            "./goods/nike_dunk_retro_prm/1.webp",
+            "./goods/nike_dunk_retro_prm/2.webp",
+            "./goods/nike_dunk_retro_prm/3.webp",
+            "./goods/nike_dunk_retro_prm/4.webp",
+            "./goods/nike_dunk_retro_prm/5.webp"
         ]
     },
     {
@@ -114,12 +114,12 @@ const PRODUCTS = [
         "price": 5292,
         "material": "Синтетика",
         "images": [
-            "./nike_initiator/1.webp",
-            "./nike_initiator/2.webp",
-            "./nike_initiator/3.webp",
-            "./nike_initiator/4.webp",
-            "./nike_initiator/5.webp",
-            "./nike_initiator/6.webp"
+            "./goods/nike_initiator/1.webp",
+            "./goods/nike_initiator/2.webp",
+            "./goods/nike_initiator/3.webp",
+            "./goods/nike_initiator/4.webp",
+            "./goods/nike_initiator/5.webp",
+            "./goods/nike_initiator/6.webp"
         ]
     },
     {
@@ -130,11 +130,11 @@ const PRODUCTS = [
         "price": 4777,
         "material": "Синтетика",
         "images": [
-            "./nike_m2k_tekno/1.webp",
-            "./nike_m2k_tekno/2.webp",
-            "./nike_m2k_tekno/3.webp",
-            "./nike_m2k_tekno/4.webp",
-            "./nike_m2k_tekno/5.webp"
+            "./goods/nike_m2k_tekno/1.webp",
+            "./goods/nike_m2k_tekno/2.webp",
+            "./goods/nike_m2k_tekno/3.webp",
+            "./goods/nike_m2k_tekno/4.webp",
+            "./goods/nike_m2k_tekno/5.webp"
         ]
     },
     {
@@ -145,12 +145,12 @@ const PRODUCTS = [
         "price": 5109,
         "material": "Синтетическая кожа",
         "images": [
-            "./nike_sb_heritage_vulc/1.webp",
-            "./nike_sb_heritage_vulc/2.webp",
-            "./nike_sb_heritage_vulc/3.webp",
-            "./nike_sb_heritage_vulc/4.webp",
-            "./nike_sb_heritage_vulc/5.webp",
-            "./nike_sb_heritage_vulc/6.webp"
+            "./goods/nike_sb_heritage_vulc/1.webp",
+            "./goods/nike_sb_heritage_vulc/2.webp",
+            "./goods/nike_sb_heritage_vulc/3.webp",
+            "./goods/nike_sb_heritage_vulc/4.webp",
+            "./goods/nike_sb_heritage_vulc/5.webp",
+            "./goods/nike_sb_heritage_vulc/6.webp"
         ]
     },
     {
@@ -161,12 +161,12 @@ const PRODUCTS = [
         "price": 4960,
         "material": "Синтетика",
         "images": [
-            "./nike_sb_malor/1.webp",
-            "./nike_sb_malor/2.webp",
-            "./nike_sb_malor/3.webp",
-            "./nike_sb_malor/4.webp",
-            "./nike_sb_malor/5.webp",
-            "./nike_sb_malor/6.webp"
+            "./goods/nike_sb_malor/1.webp",
+            "./goods/nike_sb_malor/2.webp",
+            "./goods/nike_sb_malor/3.webp",
+            "./goods/nike_sb_malor/4.webp",
+            "./goods/nike_sb_malor/5.webp",
+            "./goods/nike_sb_malor/6.webp"
         ]
     },
     {
@@ -177,12 +177,12 @@ const PRODUCTS = [
         "price": 5557,
         "material": "Коровья расщепленная кожа",
         "images": [
-            "./nike_white_navy/1.webp",
-            "./nike_white_navy/2.webp",
-            "./nike_white_navy/3.webp",
-            "./nike_white_navy/4.webp",
-            "./nike_white_navy/5.webp",
-            "./nike_white_navy/6.webp",
+            "./goods/nike_white_navy/1.webp",
+            "./goods/nike_white_navy/2.webp",
+            "./goods/nike_white_navy/3.webp",
+            "./goods/nike_white_navy/4.webp",
+            "./goods/nike_white_navy/5.webp",
+            "./goods/nike_white_navy/6.webp",
         ]
     },
     {
@@ -193,10 +193,10 @@ const PRODUCTS = [
         "price": 9937,
         "material": "Синтетическая кожа",
         "images": [
-            "./Reebok_COURT_ADVANCE/1.webp",
-            "./Reebok_COURT_ADVANCE/2.webp",
-            "./Reebok_COURT_ADVANCE/3.webp",
-            "./Reebok_COURT_ADVANCE/4.webp"
+            "./goods/Reebok_COURT_ADVANCE/1.webp",
+            "./goods/Reebok_COURT_ADVANCE/2.webp",
+            "./goods/Reebok_COURT_ADVANCE/3.webp",
+            "./goods/Reebok_COURT_ADVANCE/4.webp"
         ]
     },
     {
@@ -207,13 +207,13 @@ const PRODUCTS = [
         "price": 5624,
         "material": "Синтетическая кожа",
         "images": [
-            "./Reebok_Kamikaze/1.webp",
-            "./Reebok_Kamikaze/2.webp",
-            "./Reebok_Kamikaze/3.webp",
-            "./Reebok_Kamikaze/4.webp",
-            "./Reebok_Kamikaze/5.webp",
-            "./Reebok_Kamikaze/6.webp",
-            "./Reebok_Kamikaze/7.webp"
+            "./goods/Reebok_Kamikaze/1.webp",
+            "./goods/Reebok_Kamikaze/2.webp",
+            "./goods/Reebok_Kamikaze/3.webp",
+            "./goods/Reebok_Kamikaze/4.webp",
+            "./goods/Reebok_Kamikaze/5.webp",
+            "./goods/Reebok_Kamikaze/6.webp",
+            "./goods/Reebok_Kamikaze/7.webp"
         ]
     },
     {
@@ -224,10 +224,10 @@ const PRODUCTS = [
         "price": 4130,
         "material": "Синтетическая кожа",
         "images": [
-            "./Reebok_Royal_BB4500_HI2/1.webp",
-            "./Reebok_Royal_BB4500_HI2/2.webp",
-            "./Reebok_Royal_BB4500_HI2/3.webp",
-            "./Reebok_Royal_BB4500_HI2/4.webp"
+            "./goods/Reebok_Royal_BB4500_HI2/1.webp",
+            "./goods/Reebok_Royal_BB4500_HI2/2.webp",
+            "./goods/Reebok_Royal_BB4500_HI2/3.webp",
+            "./goods/Reebok_Royal_BB4500_HI2/4.webp"
         ]
     },
     {
@@ -238,12 +238,12 @@ const PRODUCTS = [
         "price": 4130,
         "material": "Синтетическая кожа",
         "images": [
-            "./Reebok_Smash_Edge_S/1.webp",
-            "./Reebok_Smash_Edge_S/2.webp",
-            "./Reebok_Smash_Edge_S/3.webp",
-            "./Reebok_Smash_Edge_S/4.webp",
-            "./Reebok_Smash_Edge_S/5.webp",
-            "./Reebok_Smash_Edge_S/6.webp"
+            "./goods/Reebok_Smash_Edge_S/1.webp",
+            "./goods/Reebok_Smash_Edge_S/2.webp",
+            "./goods/Reebok_Smash_Edge_S/3.webp",
+            "./goods/Reebok_Smash_Edge_S/4.webp",
+            "./goods/Reebok_Smash_Edge_S/5.webp",
+            "./goods/Reebok_Smash_Edge_S/6.webp"
         ]
     },
     {
