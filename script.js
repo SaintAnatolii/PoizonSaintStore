@@ -254,7 +254,8 @@ function showProductDetails(productId) {
         </svg>
         Назад к товарам
       </button>
-      <h2 class="product-details-title">${product.brand} ${product.name}</h2>
+      // <h2 class="product-details-title">${product.brand} ${product.name}</h2>
+      <h2 class="product-details-title">${product.name}</h2>
     </div>
     
     <div class="product-details-content">
