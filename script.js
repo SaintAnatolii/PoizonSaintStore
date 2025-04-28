@@ -245,7 +245,7 @@ function showProductDetails(productId) {
   product.images.forEach((image, index) => {
     imagesHTML += `<img src="${image}" alt="${product.name} - изображение ${index + 1}" class="product-detail-image">`
   })
-
+  // <h2 class="product-details-title">${product.brand} ${product.name}</h2>
   productDetailsContainer.innerHTML = `
     <div class="product-details-header">
       <button class="back-to-products-btn" id="backToProducts">
@@ -254,7 +254,7 @@ function showProductDetails(productId) {
         </svg>
         Назад к товарам
       </button>
-      // <h2 class="product-details-title">${product.brand} ${product.name}</h2>
+      
       <h2 class="product-details-title">${product.name}</h2>
     </div>
     
