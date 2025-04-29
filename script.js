@@ -17,7 +17,7 @@ if (typeof PRODUCTS === "undefined") {
 
 // Функция для форматирования цены
 function formatPrice(price) {
-  return price.toLocaleString() + " ₽"
+  return Math.floor(price * course * 1.5) + " ₽"
 }
 
 // Функция для получения текста типа товара
@@ -245,7 +245,7 @@ function showProductDetails(productId) {
   product.images.forEach((image, index) => {
     imagesHTML += `<img src="${image}" alt="${product.name} - изображение ${index + 1}" class="product-detail-image">`
   })
-  // <h2 class="product-details-title">${product.brand} ${product.name}</h2>
+
   productDetailsContainer.innerHTML = `
     <div class="product-details-header">
       <button class="back-to-products-btn" id="backToProducts">
@@ -254,7 +254,6 @@ function showProductDetails(productId) {
         </svg>
         Назад к товарам
       </button>
-      
       <h2 class="product-details-title">${product.name}</h2>
     </div>
     
@@ -263,6 +262,13 @@ function showProductDetails(productId) {
         <p class="product-details-type">${getTypeText(product.type)}</p>
         <p class="product-details-material"><strong>Материал:</strong> ${product.material || "Не указан"}</p>
         <p class="product-details-price"><strong>Цена:</strong> от ${formatPrice(product.price)}</p>
+        ${product.sizes && product.sizes !== null ? `
+        <div class="size-grid">
+          ${product.sizes.map(size => `
+            <div class="size-item" title="${size}">${size}</div>
+          `).join('')}
+        </div>
+        ` : ''}
         <button class="add-to-cart-large" data-product-id="${product.id}">Добавить в корзину</button>
       </div>
       
