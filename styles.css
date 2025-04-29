@@ -1448,3 +1448,31 @@ ul {
     border: 1px solid var(--primary-color);
     box-shadow: 0 0 10px rgba(1, 213, 239, 0.5);
 }
+
+/* Сетка размеров товара */
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.size-item {
+    background-color: var(--gray-800);
+    color: var(--text-color);
+    border: 1px solid var(--gray-700);
+    border-radius: 0.375rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    cursor: default;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.size-item:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(1, 213, 239, 0.5);
+}
