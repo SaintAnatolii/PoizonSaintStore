@@ -263,6 +263,7 @@ function showProductDetails(productId) {
         <p class="product-details-material"><strong>Материал:</strong> ${product.material || "Не указан"}</p>
         <p class="product-details-price"><strong>Цена:</strong> от ${formatPrice(product.price)}</p>
         ${product.sizes && product.sizes !== null ? `
+        <p class="product-details-price"><strong>Размерный ряд</strong></p>
         <div class="size-grid">
           ${product.sizes.map(size => `
             <div class="size-item" title="${size}">${size}</div>
