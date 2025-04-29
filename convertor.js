@@ -1,0 +1,1 @@
+const course = 11.06
